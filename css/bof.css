@@ -1,0 +1,29 @@
+/* BORING OLD FILMS / Identity layer. Original MO layouts retained below. */
+:root{--bof-blue:#244B73;--bof-bone:#F0EEE8;--ink:#132839;--line:#c8d0d4}
+html,body{background:var(--bof-bone);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.site-head{border-top:0;border-bottom:1px solid var(--bof-blue);height:112px;align-items:center;padding:16px clamp(20px,3.2vw,56px)}
+.brand{display:block;line-height:0;flex:0 0 auto}
+.brand img{display:block;width:125px;height:88px;object-fit:contain;object-position:left center}
+.nav{align-self:center;padding:0}
+.nav a{color:#59748a}.nav a:hover,.nav a.active{color:var(--bof-blue)}
+.menu-button{color:var(--bof-blue);border-color:var(--bof-blue);cursor:pointer}
+.universal-footer{color:var(--bof-blue);border-color:var(--bof-blue);margin-top:50px}
+.universal-footer a{color:var(--bof-blue)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--bof-blue);outline-offset:4px}
+.bof-home{min-height:calc(100svh - 230px);position:relative;display:flex;align-items:center;justify-content:center;padding:86px 28px 68px}
+.bof-home__identity{max-width:1040px;width:100%;text-align:center}
+.bof-home__primary{display:grid;grid-template-columns: minmax(0,1.5fr) minmax(0,.85fr);align-items:center;gap:0;max-width:900px;margin:auto}
+.bof-home__convergence{display:block;width:100%;max-height:490px}
+.bof-home__wordmark{display:block;width:100%;max-width:350px;justify-self:start}
+.bof-home h1{font-family:Arial,Helvetica,sans-serif;font-size:clamp(21px,3.5vw,46px);font-weight:900;letter-spacing:-.035em;color:var(--bof-blue);margin:-12px 0 23px}
+.bof-home p{color:var(--bof-blue);font-size:12px;font-weight:800;letter-spacing:.18em;line-height:1.8;margin:0}
+.bof-home__reference{position:absolute;bottom:15px;right:clamp(20px,3.2vw,56px);font-size:10px;letter-spacing:.1em;color:#6b8599}
+.about-mo__intro,.nigel__heading{border-color:var(--bof-blue)}
+.about-mo__statement p{color:var(--ink)}
+.mount,.sample.mount,.people-mount.mount{background:var(--bof-bone)}
+.mount-header,.mount-note{color:var(--bof-blue)}
+.standards h1,.nigel h1{color:var(--bof-blue)}
+.resource-grid,.resource-grid a,.support-grid,.support-card{border-color:var(--bof-blue)}
+.resource-grid a:hover{background:#e3e7e7}
+@media(max-width:860px){.site-head{height:auto;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:12px;padding:14px 20px}.brand img{width:101px;height:68px}.menu-button{display:block;margin-top:10px}.nav{display:none;grid-column:1/-1;width:100%;padding-top:7px;border-top:1px solid var(--bof-blue)}.nav.open{display:flex}.nav a{border-bottom:1px solid #aebbc5}.bof-home{min-height:calc(100svh - 190px);padding:50px 18px 65px}.bof-home__primary{grid-template-columns:1fr;gap:0;max-width:510px}.bof-home__convergence{max-height:320px}.bof-home__wordmark{max-width:180px;justify-self:center;margin-top:-52px}.bof-home h1{margin:18px 0 13px;font-size:clamp(24px,7vw,36px)}.bof-home p{font-size:10px;letter-spacing:.12em}.bof-home__reference{right:20px}}
+@media(max-width:500px){.bof-home__convergence{max-height:230px}.bof-home__wordmark{max-width:146px;margin-top:-34px}.bof-home{padding-top:40px}.universal-footer{margin-bottom:14px}}

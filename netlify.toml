@@ -1,0 +1,27 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/work"
+  to = "/materials.html"
+  status = 200
+
+[[redirects]]
+  from = "/materials"
+  to = "/materials.html"
+  status = 200
+
+[[redirects]]
+  from = "/standards"
+  to = "/standards.html"
+  status = 200
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"

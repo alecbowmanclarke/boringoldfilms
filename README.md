@@ -1,5 +1,7 @@
 # Boring Old Films
 
-Independent film production, Isle of Bute, Scotland.
+Static HTML/CSS website for https://boringoldfilms.com.
 
-Preview branch: build/bof-preview. This is not yet the production deployment.
+Built from Massive Overheads production website. Preview on `build/bof-preview` before release to `main`.
+
+Deployment: Netlify, publish directory `.` with no build command. No DNS changes until preview approval.
