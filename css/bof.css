@@ -28,10 +28,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bof-blue);outline-o
 @media(max-width:860px){.site-head{height:auto;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:12px;padding:14px 20px}.brand img{width:101px;height:68px}.menu-button{display:block;margin-top:10px}.nav{display:none;grid-column:1/-1;width:100%;padding-top:7px;border-top:1px solid var(--bof-blue)}.nav.open{display:flex}.nav a{border-bottom:1px solid #aebbc5}.bof-home{min-height:calc(100svh - 190px);padding:50px 18px 65px}.bof-home__primary{grid-template-columns:1fr;gap:0;max-width:510px}.bof-home__convergence{max-height:320px}.bof-home__wordmark{max-width:180px;justify-self:center;margin-top:-52px}.bof-home h1{margin:18px 0 13px;font-size:clamp(24px,7vw,36px)}.bof-home p{font-size:10px;letter-spacing:.12em}.bof-home__reference{right:20px}}
 @media(max-width:500px){.bof-home__convergence{max-height:230px}.bof-home__wordmark{max-width:146px;margin-top:-34px}.bof-home{padding-top:40px}.universal-footer{margin-bottom:14px}}
 
-/* Mobile homepage: use the unmodified BOF wordmark, matching desktop spacing. */
+/* Mobile: preserve desktop's side-by-side convergence and wordmark lockup. */
 @media(max-width:860px){
-  .bof-home__convergence{display:none}
-  .bof-home__primary{display:flex;justify-content:center;max-width:100%}
-  .bof-home__wordmark{width:min(68vw,310px);max-width:none;margin:0;justify-self:auto;height:auto}
-  .bof-home h1{margin-top:32px}
+  .bof-home__primary{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr);align-items:center;gap:0;max-width:510px}
+  .bof-home__convergence{display:block;width:100%;max-height:none}
+  .bof-home__wordmark{display:block;width:100%;max-width:none;height:auto;margin:0;justify-self:start}
+  .bof-home h1{margin:18px 0 13px}
+}
+@media(max-width:500px){
+  .bof-home__primary{max-width:100%}
+  .bof-home__convergence{max-height:none}
+  .bof-home__wordmark{max-width:none;margin:0}
 }
